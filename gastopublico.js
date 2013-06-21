@@ -14,7 +14,7 @@ $(function() {
             .attr("height", height);
         var projection = d3.geo.mercator()
             .scale(3000)
-            .center([-60.156944, -36.936111])
+            .center(d3.geo.centroid(feature))
             .translate([width/2 , height/2]);
         var path = d3.geo.path().projection(projection);
         var partidos_g = svg.append('g')
