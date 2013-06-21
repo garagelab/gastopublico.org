@@ -1,0 +1,20 @@
+.partidos path {
+  fill: transparent;
+  stroke-width: 0.5px;
+  stroke: #ddd;
+}
+
+.partidos path:hover {
+  cursor: pointer;
+  fill: #eee;
+}
+
+.tiene-gastopublico {
+  fill: green !important;
+
+}
+
+.tiene-gastopublico:hover {
+  fill-opacity: 0.7 !important;
+}
+
