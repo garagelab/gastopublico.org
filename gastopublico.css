@@ -1,3 +1,9 @@
+body {
+	background: #FFF;
+	color: #797979;
+	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .partidos path {
   fill: transparent;
   stroke-width: 0.5px;
