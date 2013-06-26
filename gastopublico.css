@@ -1,8 +1,246 @@
+/*- Reseteo de Estilos -----------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+	line-height: 100%;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input, textarea {
+	font-family: inherit;
+	font-size: 1em;
+}
+
+:focus {
+	outline: 0;
+}
+
+/*- Elementos de HTML5 -*/
+header, hgroup, nav, section, aside, article, dialog, figure, footer {
+	display: block;
+}
+
+/*- Clearfix -*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/*- Fin de Reseteo de Estilos ----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Estilos Generales -----------------------------------------------------------*/
+
 body {
 	background: #FFF;
+	border-top: 2px solid #8c98a5;
 	color: #797979;
 	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+a {
+	color: #111;
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.5em;
+	margin: 1em 0;
+}
+
+strong {
+	font-weight: 800;
+}
+
+h3 {
+	color: #111;
+	line-height: 24px;
+	font-family: "Georgia", sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: -0.035em;
+}
+
+h4 {
+	color: #111;
+	line-height: 22px;
+	font-family: "Georgia", sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: -0.035em;
+}
+
+/*- Ancho de la Pantalla -*/
+#principal,
+#footer {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+/*- End of Estilos Generales ----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Estilos de la Cabecera -----------------------------------------------------------*/
+#cabecera {
+	border-bottom: 1px solid #dcdcdc;
+	padding: 2em 0;
+}
+
+#cabecera h1 {
+	font-size: 31px;
+	font-weight: 500;
+	letter-spacing: -0.07em;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+#cabecera h2 {
+	font-size: 19px;
+	font-weight: 400;
+	letter-spacing: -0.05em;
+}
+
+/*------------------------------*/
+/* LOGO */
+/*------------------------------*/
+#logo {
+	border-right: 1px solid #dcdcdc;
+	float: left;
+	padding: 0 25px 0 0;
+}
+
+#logo a {
+	color: #505050;
+}
+
+#logo a span {
+	color: #6e6e6e;
+}
+
+#apoyo_de img {
+	vertical-align:middle;
+}
+
+#apoyo_de {
+	float:left;
+}
+
+#apoyo_de ul {
+	margin:8px 0 0 20px;
+}
+
+#apoyo_de ul li {
+	display:inline;
+}	
+#apoyo_de ul li a {
+	opacity:0.5;
+	margin:0 5px;
+}
+
+#apoyo_de ul li a:hover {
+	opacity:1;
+}
+
+#descripcion {
+	padding: 2em 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#descripcion h2 {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 1.25em;
+	letter-spacing: -0.05em;
+	padding: 4px 0 4px;
+}
+
+/*- Arreglos para IE, Safari y Chrome -----------------------------------------------------------*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#descripcion h2 {
+		letter-spacing: -0.040em;
+	}
+	#contador_gastos .small dd {
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+}
+
+/*- End of Arreglos para IE, Safari y Chrome ----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*===============================*/
+
+
+#wrapper {
+  padding: 2em 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#sitios {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.25em;
+  letter-spacing: -0.05em;
+  padding: 2em 0;
+  border-bottom: 1px solid #dcdcdc;  
+  margin-bottom: 2em;
+}
+
+#sitios li {
+  padding: 3px 0 0;
+}
+
+#sitios li a:hover {
+  background: #ddd;
+}
+
+
+/*===============================*/
+
 
 .partidos path {
   fill: transparent;
