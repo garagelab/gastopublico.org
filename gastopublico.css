@@ -228,6 +228,8 @@ h4 {
   padding: 2em 0;
   border-bottom: 1px solid #dcdcdc;  
   margin-bottom: 2em;
+  width: 30%;
+  float: left;
 }
 
 #sitios li {
@@ -238,6 +240,11 @@ h4 {
   background: #ddd;
 }
 
+#mapa {
+  width: 70%;
+  float: left;
+}
+
 
 /*===============================*/
 
@@ -245,7 +252,7 @@ h4 {
 .partidos path {
   fill: transparent;
   stroke-width: 0.5px;
-  stroke: #ddd;
+  stroke: #aaa;
 }
 
 .partidos path:hover {
