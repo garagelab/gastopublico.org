@@ -50,8 +50,8 @@ $(function() {
         })
         .on('click', 'path', function() {
             var a = $('#sitios li[data-partido="'+ $(this).attr('id') +'"] a');
-            console.log(a[0]);
-            a.trigger('click');
+            console.log(a.attr('href'));
+            window.open(a.attr('href'));
         });
 
         $('#sitios li').on('mouseover', function() {
